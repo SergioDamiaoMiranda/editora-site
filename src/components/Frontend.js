@@ -1,14 +1,14 @@
 import React    from "react";
 
-const Home = () => (
+const Frontend = () => (
 
     <main className="principal">
-        <h2>Últimos lançamentos</h2>
+        <h2>Categoria frontend</h2>
         <div className="card">
-            <p>Conteúdos da Home</p>
+            <p>Conteúdos da Frontend</p>
         </div>
     </main>
 
 );
 
-export default Home;
+export default Frontend;

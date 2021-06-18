@@ -1,14 +1,14 @@
 import React    from "react";
 
-const Home = () => (
+const Catalogo = () => (
 
     <main className="principal">
-        <h2>Últimos lançamentos</h2>
+        <h2>Categoria Catalogo</h2>
         <div className="card">
-            <p>Conteúdos da Home</p>
+            <p>Conteúdos da Catalogo</p>
         </div>
     </main>
 
 );
 
-export default Home;
+export default Catalogo;

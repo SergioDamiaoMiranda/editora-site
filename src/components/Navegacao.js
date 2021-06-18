@@ -10,7 +10,7 @@ const Navegacao = () => {
             <li><NavLink exact activeStyle={ linkCorrente } to="/frontend">Fronted</NavLink></li>
             <li><NavLink exact activeStyle={ linkCorrente } to="/programacao">Programação</NavLink></li>
             <li><NavLink exact activeStyle={ linkCorrente } to="/desing">Desing</NavLink></li>
-            <li><NavLink exact activeStyle={ linkCorrente } to="/catalogo"></NavLink></li>
+            <li><NavLink exact activeStyle={ linkCorrente } to="/catalogo">Catálogo</NavLink></li>
         </ul>
     );
 };
