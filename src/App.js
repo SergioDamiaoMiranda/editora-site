@@ -1,4 +1,4 @@
-import React      from "react";
+import React, { Component }      from "react";
 import Topo       from "./components/Topo";
 import Principal  from "./components/Principal"
 import Rodape     from "./components/Rodape"
