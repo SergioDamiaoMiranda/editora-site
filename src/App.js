@@ -28,7 +28,7 @@ class App extends Component {
     } catch (error) {
       console.log(error);
       document
-        .querySelectorAll(".principal")[0].insertAdjacentHTML("beforeend", "<p class='erro'>Msg de erro</p>")
+        .querySelectorAll(".principal")[0].insertAdjacentHTML("beforeend", "<p class='erro'>Dados não disponíveis</p>")
     }
   }
   render() {
@@ -37,11 +37,11 @@ class App extends Component {
         <>
           <Topo />
           <Switch>
-            <Route exact path="/" render={ Home } />
-            <Route exact path="/frontend" render={ () => <Frontend /> } />
-            <Route exact path="/programacao"render={ () => <Programacao /> } />
-            <Route exact path="/desing" render={ () => <Desing /> } />
-            <Route exact path="/catalogo" render={ () => <Catalogo /> } />
+            <Route exact path="/"           render={ () => <Home        livros={ this.state.livros} /> } />
+            <Route exact path="/frontend"   render={ () => <Frontend    livros={ this.state.livros} /> } />
+            <Route exact path="/programacao"render={ () => <Programacao livros={ this.state.livros} /> } />
+            <Route exact path="/desing"     render={ () => <Desing      livros={ this.state.livros} /> } />
+            <Route exact path="/catalogo"   render={ () => <Catalogo    livros={ this.state.livros} /> } />
             <Route component={ NotFound } />
           </Switch>
           <Rodape />
